@@ -55,7 +55,7 @@ function Example() {
               aria-controls="example-collapse-text"
               aria-expanded={open}
             >
-              Advanced Search
+              Advanced Search&nbsp;&nbsp;
               <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
             </Button>
           </Col>
