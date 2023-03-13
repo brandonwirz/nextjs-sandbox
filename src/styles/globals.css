@@ -1,10 +1,8 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
+  --font-mono: "Montserrat", sans-serif;
+  --font-line-height: 23px;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -70,6 +68,8 @@
     --callout-border-rgb: 108, 108, 108;
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
+    --hover-color-change: rgb(130, 127, 199);
+    --transition: 0.15s;
   }
 }
 
@@ -77,6 +77,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 html,
@@ -104,4 +105,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */
