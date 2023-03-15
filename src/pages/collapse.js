@@ -33,7 +33,7 @@ function Example() {
             </InputGroup>
           </Col>
 
-          <Col sm lg={2} className="my-1">
+          <Col sm={12} lg={2} className="my-1">
             <Form.Label htmlFor="type">Select Type</Form.Label>
             <Form.Label htmlFor="type" visuallyHidden></Form.Label>
 
@@ -45,7 +45,7 @@ function Example() {
             </Form.Select>
           </Col>
 
-          <Col sm={2} className="my-1">
+          <Col sm={12} lg={2} className="my-1">
             <Form.Label htmlFor="email">Email</Form.Label>
 
             <Form.Label htmlFor="email" visuallyHidden></Form.Label>
@@ -57,7 +57,7 @@ function Example() {
               />
             </InputGroup>
           </Col>
-          <Col sm={2} className="my-1">
+          <Col sm={12} lg={2} className="my-1">
             <Form.Label htmlFor="phone">Phone</Form.Label>
 
             <Form.Label htmlFor="phone" visuallyHidden>
@@ -65,7 +65,7 @@ function Example() {
             </Form.Label>
             <Form.Control id="phone" placeholder="Search" />
           </Col>
-          <Col sm={2}>
+          <Col sm={12} lg={2}>
             <Form.Label id="a-search" htmlFor="advanced-search">
               Advanced Search
             </Form.Label>
