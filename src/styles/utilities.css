@@ -80,7 +80,7 @@ p {
   width: 768px;
 }
 
-button.btnclick:after {
+button.advanced-search:after {
   display: inline-block;
   -webkit-transform: scale(0.5, 1); /* Safari and Chrome */
   -moz-transform: scale(0.5, 1); /* Firefox */
@@ -94,11 +94,16 @@ button.btnclick:after {
 .form-label {
   font-weight: 600;
 }
+
 @media (max-width: 700px) {
   .main-nav {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+  label#a-search {
+    margin-top: 5px;
+    width: 100%;
   }
 }
