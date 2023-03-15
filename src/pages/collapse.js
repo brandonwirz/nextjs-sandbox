@@ -11,14 +11,18 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 function Example() {
   const [open, setOpen] = useState(false);
   //  <FontAwesomeIcon icon="fa-solid fa-chevron-down" />;
+  const isActive = "Active";
+
   return (
     <Container>
       <Form>
         <Row className="align-items-center">
           <Col sm={4} className="my-1">
+            <Form.Label htmlFor="search">User Name</Form.Label>
             <Form.Label htmlFor="search" visuallyHidden>
               Search
             </Form.Label>
+
             <InputGroup>
               <Form.Control id="search" placeholder="Search" />
               <InputGroup.Text>
@@ -28,36 +32,41 @@ function Example() {
           </Col>
 
           <Col sm={2} className="my-1">
-            <Form.Label htmlFor="name" visuallyHidden>
-              Name
-            </Form.Label>
-            <Form.Control id="name" placeholder="Name" />
+            <Form.Label htmlFor="type">Select Type</Form.Label>
+            <Form.Label htmlFor="type" visuallyHidden></Form.Label>
+            <Form.Control id="name" placeholder="Search" />
           </Col>
+
           <Col sm={2} className="my-1">
-            <Form.Label htmlFor="email" visuallyHidden>
-              Name
-            </Form.Label>
-            <Form.Control id="email" placeholder="Email" />
-          </Col>
-          <Col sm={2} className="my-1">
-            <Form.Label htmlFor="inlineFormInputGroupUsername" visuallyHidden>
-              Username
-            </Form.Label>
+            <Form.Label htmlFor="email">Email</Form.Label>
+
+            <Form.Label htmlFor="email" visuallyHidden></Form.Label>
             <InputGroup>
               <InputGroup.Text>@</InputGroup.Text>
               <Form.Control
                 id="inlineFormInputGroupUsername"
-                placeholder="Username"
+                placeholder="Search"
               />
             </InputGroup>
           </Col>
-          <Col>
+          <Col sm={2} className="my-1">
+            <Form.Label htmlFor="phone">Phone</Form.Label>
+
+            <Form.Label htmlFor="phone" visuallyHidden>
+              Name
+            </Form.Label>
+            <Form.Control id="phone" placeholder="Search" />
+          </Col>
+          <Col sm={2}>
+            <Form.Label htmlFor="advanced-search">Advanced Search</Form.Label>
+
             <Button
               variant="outline-secondary"
               className="btnclick"
               onClick={() => setOpen(!open)}
               aria-controls="example-collapse-text"
               aria-expanded={open}
+              id="advanced-search"
             >
               Advanced Search
             </Button>
@@ -68,49 +77,60 @@ function Example() {
         <Collapse in={open} className="margin-top-20px">
           <Row>
             <Col sm={2}>
-              <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
-                Name
-              </Form.Label>
+              <Form.Label htmlFor="phone">City/State</Form.Label>
+
+              <Form.Label
+                htmlFor="inlineFormInputName"
+                visuallyHidden
+              ></Form.Label>
               <Form.Control id="inlineFormInputName" placeholder="City/State" />
             </Col>
             <Col sm={2}>
-              <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
-                Name
-              </Form.Label>
+              <Form.Label htmlFor="Profile State">Profile Role</Form.Label>
+              <Form.Label
+                htmlFor="inlineFormInputName"
+                visuallyHidden
+              ></Form.Label>
               <Form.Control
                 id="inlineFormInputName"
                 placeholder="Profile Role"
               />
             </Col>
             <Col sm={2}>
-              <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
-                Name
-              </Form.Label>
+              <Form.Label htmlFor="Profile State">Profile State</Form.Label>
+              <Form.Label
+                htmlFor="inlineFormInputName"
+                visuallyHidden
+              ></Form.Label>
               <Form.Control
                 id="inlineFormInputName"
                 placeholder="Profile State"
               />
             </Col>
             <Col sm={2}>
-              <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
-                Name
-              </Form.Label>
-              <Form.Control id="inlineFormInputName" placeholder="Jane Doe" />
+              <Form.Label htmlFor="Last-Modified">Last Modified</Form.Label>
+              <Form.Label
+                htmlFor="inlineFormInputName"
+                visuallyHidden
+              ></Form.Label>
+              <Form.Control id="Last-Modified" placeholder="Last Modified" />
             </Col>
             <Col sm={2}>
-              <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
-                Name
-              </Form.Label>
-              <Form.Control
-                id="inlineFormInputName"
-                placeholder="Last Modified"
-              />
+              <Form.Label htmlFor="custom-field">Last Modified</Form.Label>
+              <Form.Label htmlFor="custom-field" visuallyHidden></Form.Label>
+              <Form.Control id="custom-field" placeholder="Last Modified" />
             </Col>
+
             <Col sm={2}>
-              <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
-                Name
-              </Form.Label>
-              <Form.Control id="inlineFormInputName" placeholder="Jane Doe" />
+              <Form.Label htmlFor="Active">Active</Form.Label>
+
+              <InputGroup className="mb-3">
+                <InputGroup.Checkbox aria-label="Checkbox for following text input" />
+                <Form.Control
+                  placeholder="Active"
+                  aria-label="Text input with checkbox"
+                />
+              </InputGroup>
             </Col>
           </Row>
         </Collapse>

@@ -13,6 +13,7 @@ nav a:hover {
   color: var(--hover-color-change);
   border-radius: var(--border-radius);
   text-decoration: none;
+  transition: 0.3s;
 }
 nav.nav {
   margin-bottom: 30px;
@@ -89,6 +90,9 @@ button.btnclick:after {
   content: ">";
   position: relative;
   margin-left: 5px;
+}
+.form-label {
+  font-weight: 600;
 }
 @media (max-width: 700px) {
   .main-nav {
