@@ -4,6 +4,7 @@
 .title {
   margin-top: 20px;
 }
+/* nav styles */
 a:link {
   color: white;
   transition: var(--transition);
@@ -77,9 +78,18 @@ p {
 .formwidth {
   width: 768px;
 }
-/* button.btnclick {
-  width: 100px;
-} */
+
+button.btnclick:after {
+  display: inline-block;
+  -webkit-transform: scale(0.5, 1); /* Safari and Chrome */
+  -moz-transform: scale(0.5, 1); /* Firefox */
+  -ms-transform: scale(0.5, 1); /* IE 9 */
+  -o-transform: scale(0.5, 1); /* Opera */
+  transform: scale(0.5, 1); /* W3C */
+  content: ">";
+  position: relative;
+  margin-left: 5px;
+}
 @media (max-width: 700px) {
   .main-nav {
     margin-top: 20px;

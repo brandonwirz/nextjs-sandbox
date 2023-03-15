@@ -1,38 +1,43 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
 import Collapse from "react-bootstrap/Collapse";
-import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 import InputGroup from "react-bootstrap/InputGroup";
-import Nav from "react-bootstrap/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 function Example() {
   const [open, setOpen] = useState(false);
-
+  //  <FontAwesomeIcon icon="fa-solid fa-chevron-down" />;
   return (
     <Container>
       <Form>
         <Row className="align-items-center">
           <Col sm={4} className="my-1">
-            <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
+            <Form.Label htmlFor="search" visuallyHidden>
               Search
             </Form.Label>
-            <Form.Control id="inlineFormInputName" placeholder="Search" />
+            <InputGroup>
+              <Form.Control id="search" placeholder="Search" />
+              <InputGroup.Text>
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+              </InputGroup.Text>
+            </InputGroup>
           </Col>
 
           <Col sm={2} className="my-1">
-            <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
+            <Form.Label htmlFor="name" visuallyHidden>
               Name
             </Form.Label>
-            <Form.Control id="inlineFormInputName" placeholder="Type" />
+            <Form.Control id="name" placeholder="Name" />
           </Col>
           <Col sm={2} className="my-1">
-            <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
+            <Form.Label htmlFor="email" visuallyHidden>
               Name
             </Form.Label>
-            <Form.Control id="inlineFormInputName" placeholder="Email" />
+            <Form.Control id="email" placeholder="Email" />
           </Col>
           <Col sm={2} className="my-1">
             <Form.Label htmlFor="inlineFormInputGroupUsername" visuallyHidden>
@@ -46,20 +51,19 @@ function Example() {
               />
             </InputGroup>
           </Col>
-          <Col sm lg="2">
+          <Col>
             <Button
               variant="outline-secondary"
               className="btnclick"
-              eventKey="link"
               onClick={() => setOpen(!open)}
               aria-controls="example-collapse-text"
               aria-expanded={open}
             >
-              Advanced Search&nbsp;&nbsp;
-              <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
+              Advanced Search
             </Button>
           </Col>
         </Row>
+
         <br />
         <Collapse in={open} className="margin-top-20px">
           <Row>
@@ -67,7 +71,25 @@ function Example() {
               <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
                 Name
               </Form.Label>
-              <Form.Control id="inlineFormInputName" placeholder="Jane Doe" />
+              <Form.Control id="inlineFormInputName" placeholder="City/State" />
+            </Col>
+            <Col sm={2}>
+              <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
+                Name
+              </Form.Label>
+              <Form.Control
+                id="inlineFormInputName"
+                placeholder="Profile Role"
+              />
+            </Col>
+            <Col sm={2}>
+              <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
+                Name
+              </Form.Label>
+              <Form.Control
+                id="inlineFormInputName"
+                placeholder="Profile State"
+              />
             </Col>
             <Col sm={2}>
               <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
@@ -79,19 +101,10 @@ function Example() {
               <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
                 Name
               </Form.Label>
-              <Form.Control id="inlineFormInputName" placeholder="Jane Doe" />
-            </Col>
-            <Col sm={2}>
-              <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
-                Name
-              </Form.Label>
-              <Form.Control id="inlineFormInputName" placeholder="Jane Doe" />
-            </Col>
-            <Col sm={2}>
-              <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
-                Name
-              </Form.Label>
-              <Form.Control id="inlineFormInputName" placeholder="Jane Doe" />
+              <Form.Control
+                id="inlineFormInputName"
+                placeholder="Last Modified"
+              />
             </Col>
             <Col sm={2}>
               <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
