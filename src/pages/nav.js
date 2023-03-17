@@ -16,9 +16,6 @@ function Nav() {
             <Link href="/sales">Sales</Link>
           </li>
           <li>
-            <Link href="/animals">Animals</Link>
-          </li>
-          <li>
             <Link href="/downloads">Downloads</Link>
           </li>
           <li>
