@@ -51,10 +51,7 @@ function Example() {
             <Form.Label htmlFor="email" visuallyHidden></Form.Label>
             <InputGroup>
               <InputGroup.Text>@</InputGroup.Text>
-              <Form.Control
-                id="inlineFormInputGroupUsername"
-                placeholder="Search"
-              />
+              <Form.Control id="email" placeholder="Search" />
             </InputGroup>
           </Col>
           <Col sm={12} lg={2} className="my-1">
@@ -97,7 +94,7 @@ function Example() {
                 htmlFor="inlineFormInputName"
                 visuallyHidden
               ></Form.Label>
-              <Form.Control id="inlineFormInputName" placeholder="City/State" />
+              <Form.Control id="inlineFormInputName" placeholder="Search" />
             </Col>
             <Col sm={2}>
               <Form.Label htmlFor="Profile State">Profile Role</Form.Label>
@@ -105,10 +102,7 @@ function Example() {
                 htmlFor="inlineFormInputName"
                 visuallyHidden
               ></Form.Label>
-              <Form.Control
-                id="inlineFormInputName"
-                placeholder="Profile Role"
-              />
+              <Form.Control id="inlineFormInputName" placeholder="Search" />
             </Col>
             <Col sm={2}>
               <Form.Label htmlFor="Profile State">Profile State</Form.Label>
@@ -116,10 +110,7 @@ function Example() {
                 htmlFor="inlineFormInputName"
                 visuallyHidden
               ></Form.Label>
-              <Form.Control
-                id="inlineFormInputName"
-                placeholder="Profile State"
-              />
+              <Form.Control id="inlineFormInputName" placeholder="Search" />
             </Col>
             <Col sm={2}>
               <Form.Label htmlFor="Last-Modified">Last Modified</Form.Label>
@@ -133,7 +124,7 @@ function Example() {
               <Form.Label htmlFor="custom-field">Active</Form.Label>
               <Form.Label htmlFor="custom-field" visuallyHidden></Form.Label>
               <Form.Select id="type">
-                <option>Active 1</option>
+                <option>Select Active </option>
                 <option>Active 2</option>
                 <option>Not Active</option>
               </Form.Select>

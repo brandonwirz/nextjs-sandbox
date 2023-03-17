@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Container } from "react-bootstrap";
-
+import Row from "react-bootstrap/Row";
 function Nav() {
   return (
     <Container>
