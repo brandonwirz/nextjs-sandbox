@@ -8,6 +8,7 @@ import { ReactElement } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { render } from "react-dom";
+import Container from "react-bootstrap/Container";
 
 export default function Home() {
   return (
@@ -23,22 +24,24 @@ export default function Home() {
         <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
         <FontAwesomeIcon icon="fa-regular fa-eye" />
       </div> */}
-      <h1 className="title">Home.....</h1>
-      <main className={styles.main}>
-        <div className="lockup">
-          <h3>Next.js React framework all in one</h3>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </main>
+      <Container>
+        <h1 className="title">Home.....</h1>
+        <main className={styles.main}>
+          <div className="lockup">
+            <h3>Next.js React framework all in one</h3>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </main>
+      </Container>
     </>
   );
 }
