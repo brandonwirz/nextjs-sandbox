@@ -4,11 +4,7 @@
 .title {
   margin-top: 20px;
 }
-/* nav styles */
-a:link {
-  color: white;
-  transition: var(--transition);
-}
+
 nav a:hover {
   color: var(--hover-color-change);
   border-radius: var(--border-radius);
@@ -17,6 +13,9 @@ nav a:hover {
 }
 nav.nav {
   margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
 }
 margin-top-20px {
   margin-top: 40px;
@@ -36,46 +35,45 @@ h6 {
 }
 h1.title {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 p {
   line-height: var(--font-line-height);
 }
 .nav li {
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   text-transform: uppercase;
   text-align: center;
   /* display: block; */
 }
-.main-nav {
+/* .main-nav {
   margin-top: 20px;
   display: flex;
-  /* justify-content: center;
-  flex-direction: row; */
   margin: auto;
   line-height: 10px;
-}
+} */
 .main-nav li {
   list-style-type: none;
 }
-.main-nav a {
+/* .main-nav a {
+} */
+
+.main-nav {
   padding: 10px 15px;
   text-transform: uppercase;
   text-align: center;
   display: block;
   font-family: var(--font-mono);
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
-
 .main-nav a {
   color: #9735ea;
   font-size: 0.99em;
   text-decoration: none;
+  padding: 10px 15px;
 }
-/* .main-nav {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-} */
 .formwidth {
   width: 768px;
 }
