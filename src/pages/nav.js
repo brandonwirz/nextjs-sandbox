@@ -13,6 +13,7 @@ function NavbarMain() {
             <Nav.Link href="/nav-components/about">About</Nav.Link>
             <Nav.Link href="/nav-components/pricing">Pricing</Nav.Link>
             <Nav.Link href="/nav-components/tabs">Tabs</Nav.Link>
+            <Nav.Link href="/nav-components/custom-tab">Left Tabs</Nav.Link>
             <Nav.Link href="/selectdropdown">Select Dropdown</Nav.Link>
             <Nav.Link href="/nav-components/form">Form</Nav.Link>
             <Nav.Link href="/nav-components/collapse">Collapse</Nav.Link>
