@@ -105,3 +105,16 @@ button.advanced-search:after {
     width: 100%;
   }
 }
+.dropdown-s {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.content {
+  width: 800px;
+}
+.selected-inputs {
+  display: block;
+  margin-top: 10px;
+}

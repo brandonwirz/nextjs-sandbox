@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+// import Nav from "react-bootstrap/Nav";
+// import Navbar from "react-bootstrap/Navbar";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 
 function NavbarMain() {
   return (
@@ -13,13 +13,15 @@ function NavbarMain() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/pricing">Pricing</Nav.Link>
-            <Nav.Link href="/form">Form</Nav.Link>
-            <Nav.Link href="/collapse">Collapse</Nav.Link>
+            <Nav.Link href="/nav-components/about">About</Nav.Link>
+            <Nav.Link href="/nav-components/pricing">Pricing</Nav.Link>
+            <Nav.Link href="/selectdropdown">Select Dropdown</Nav.Link>
+            <Nav.Link href="/nav-components/form">Form</Nav.Link>
+            <Nav.Link href="/nav-components/collapse">Collapse</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+              <NavDropdown.Item href="/action">Action #1</NavDropdown.Item>
+              <NavDropdown.Item href="/anotheraction">
+                Another action #2
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               <NavDropdown.Divider />
