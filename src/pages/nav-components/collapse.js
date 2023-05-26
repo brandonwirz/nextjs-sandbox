@@ -1,11 +1,19 @@
 import React, { useState } from "react";
-import Collapse from "react-bootstrap/Collapse";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import InputGroup from "react-bootstrap/InputGroup";
+import {
+  Collapse,
+  Container,
+  Row,
+  Col,
+  Form,
+  Button,
+  InputGroup,
+} from "react-bootstrap";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
+// import Form from "react-bootstrap/Form";
+// import Button from "react-bootstrap/Button";
+// import InputGroup from "react-bootstrap/InputGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 function Example() {
