@@ -1,6 +1,4 @@
 import { Container, Accordion } from "react-bootstrap";
-// import Col from "react-bootstrap/Col";
-// import Row from "react-bootstrap/Row";
 
 function AllCollapseExample() {
   return (

@@ -1,8 +1,5 @@
 import Link from "next/link";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-// import Nav from "react-bootstrap/Nav";
-// import Navbar from "react-bootstrap/Navbar";
-// import NavDropdown from "react-bootstrap/NavDropdown";
 
 function NavbarMain() {
   return (
@@ -15,6 +12,7 @@ function NavbarMain() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/nav-components/about">About</Nav.Link>
             <Nav.Link href="/nav-components/pricing">Pricing</Nav.Link>
+            <Nav.Link href="/nav-components/tabs">Tabs</Nav.Link>
             <Nav.Link href="/selectdropdown">Select Dropdown</Nav.Link>
             <Nav.Link href="/nav-components/form">Form</Nav.Link>
             <Nav.Link href="/nav-components/collapse">Collapse</Nav.Link>
