@@ -1,5 +1,6 @@
 import { Container, Col, Row, Nav, Tab } from "react-bootstrap";
 import TabbedDrpDwn from "./tabbed-dropdown";
+import TabbedDrpDwn2 from "./tabbed-dropdown2";
 
 function LeftTabs() {
   return (
@@ -22,7 +23,7 @@ function LeftTabs() {
                 <TabbedDrpDwn />
               </Tab.Pane>
               <Tab.Pane eventKey="second">
-                <TabbedDrpDwn />
+                <TabbedDrpDwn2 />
               </Tab.Pane>
             </Tab.Content>
           </Col>

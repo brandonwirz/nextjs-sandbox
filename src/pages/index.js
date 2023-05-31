@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { render } from "react-dom";
 import Container from "react-bootstrap/Container";
+import Collapse from "./nav-components/collapseEx";
 
 export default function Home() {
   return (
@@ -41,6 +42,8 @@ export default function Home() {
             </p>
           </div>
         </main>
+
+        <Collapse />
       </Container>
     </>
   );
