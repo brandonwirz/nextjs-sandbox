@@ -118,3 +118,30 @@ button.advanced-search:after {
   display: block;
   margin-top: 10px;
 }
+
+/* collpase-expand */
+.collapse-button {
+  width: 200px;
+  height: 32px;
+  /* padding: 10px 10px 0 10px; */
+  display: flex;
+
+  justify-content: flex-end;
+  margin: 0;
+  margin-left: auto;
+}
+
+.collapse-content {
+  border: solid 2px grey;
+  margin-top: 1em;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.collapse-content.collapsed {
+  width: 500px;
+}
+
+.collapse-content.expanded {
+  width: 945px;
+}
